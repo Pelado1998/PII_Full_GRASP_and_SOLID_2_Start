@@ -8,6 +8,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using Full_GRASP_And_SOLID.Library;
+using static Full_GRASP_And_SOLID.Library.ConsolePrinter;
 
 namespace Full_GRASP_And_SOLID
 {
@@ -25,7 +26,7 @@ namespace Full_GRASP_And_SOLID
             recipe.FinalProduct = GetProduct("Café con leche");
             recipe.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
             recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
-            recipe.PrintRecipe();
+            PrintRecipe(recipe);
         }
 
         private static void PopulateCatalogs()
