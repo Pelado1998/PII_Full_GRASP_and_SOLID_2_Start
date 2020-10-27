@@ -8,6 +8,10 @@
 //Por ISP para no exigir a Recipe la responsabilidad de imprimir por pantalla.
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    /// Cumple con SRP ya que solo tiene una razón para cambiar que es los datos de impresión.
+    /// Cumple con expert ya que es el mejor responsable para realizar la impresión.
+    /// </summary>
     public class ConsolePrinter
     {
         public static void PrintRecipe(Recipe recipe)

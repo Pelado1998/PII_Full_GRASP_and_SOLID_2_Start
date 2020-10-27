@@ -6,6 +6,10 @@
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /// <summary>
+    ///Cumple con Expert porque es el único responsable de conocer los datos del equipo
+    ///Cumple con SRP porque tiene una única razón de cambio que es cambiar los datos del equipo
+    /// </summary>
     public class Equipment
     {
         public Equipment(string description, double hourlyCost)
